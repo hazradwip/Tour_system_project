@@ -1,34 +1,148 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-             
-    <title>Travellopia</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Materialize JS -->
+  <script src="./scripts/materialize.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Travellopia</title>
 </head>
+
 <body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper">
       <div class="container">
-        <div class="row">
-            <nav>
-                <div class="nav-wrapper #bbdefb blue lighten-4">
-                  <a href="#" class="name black-text ">Name</a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a class="#000000 black" href="">My Account</a></li>
-                    <li><a class="#000000 black"href="">Contact Us</a></li>
-                    <li><a class="#000000 black"href="">Login/SignUp</a></li>
-                    <li><a class="#000000 black"href="">Others</a></li>
-                  </ul>
-                </div>
-            </nav>
-              
+        <a href="#" class="brand-logo">Travellopia</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="" class="nav-items">Login</a></li>
+          <li><a href="" class="">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="./images/gangtok.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="slider-text">Trending Packages!</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        </div>
+      </li>
+      <li>
+        <img src="./images/Kedarnath.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="slider-text">Trending Packages</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        </div>
+      </li>
+      <li>
+        <img src="./images/ladakh.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="slider-text">Trending Packages</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        </div>
+      </li>
+      <li>
+        <img src="./images/ooty.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="slider-text">Trending Packages</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div>
+      <h3 class="center-align">Search By City</h3>
+    </div>
+
+    <div class="row">
+      <div class="col l3 s12 m7">
+        <div class="card small #4db6ac teal lighten-3">
+          <div class="card-image">
+            <img src="./images/ooty.jpg">
+            <!--<span class="card-title"><span class="black-text">Ooty</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text center-align">Ooty</span></a>
+          </div>
         </div>
       </div>
-                 
-    </body>
+      <div class="col l3 s12 m7">
+        <div class="card small small #ff8a80 red accent-1">
+          <div class="card-image">
+            <img src="./images/gangtok.jpg">
+            <!--<span class="card-title"><span class="black-text">Sikkim</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text center-align">Sikkim</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 s12 m7">
+        <div class="card small #4db6ac teal lighten-3">
+          <div class="card-image">
+            <img src="./images/Kedarnath.jpg">
+            <!--<span class="card-title"><span class="black-text">Kedarnath</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text center-align">Kedarnath</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 s12 m7">
+        <div class="card small #ff8a80 red accent-1">
+          <div class="card-image">
+            <img src="./images/ladakh.jpg">
+            <!--<span class="card-title"><span class="black-text">Ladakh</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text ">Ladakh</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4 class="left-align">Let's plan your holiday</h4>
+    </div>
+
+    <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#four!"><img src="./images/hanle.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="./images/ladakh.jpg"></a>
+    </div>
+  </div>
+
+  <script src="./scripts/styles.js"></script>
+</body>
+
 </html>
