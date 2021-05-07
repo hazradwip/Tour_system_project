@@ -11,8 +11,12 @@ body{
 }
 
 nav {
-    background-color: var(--secondary);
     line-height: 60px;
+    background-color: #fbfbfb;
+}
+
+nav .brand-logo {
+    color: var(--secondary);
 }
 
 .slider .indicators .indicator-item {
@@ -46,12 +50,14 @@ nav {
 }
 
 .nav-items {
-    background-color: rgb(232 170 155 / 15%);
+    background-color: rgba(118, 154, 190, 0.3);
+    color: var(--secondary);
     margin: 0.75rem;
     line-height: 36px;
     height: 2.5rem;
     padding: 0 25px;
     border-radius: 300px;
+    font-weight: 700;
 }
 
 .btn-primary {
@@ -73,6 +79,29 @@ nav {
     color: var(--primary);
     padding: 0 25px;
     border-radius: 5px;
+}
+
+input[type=text]:not(.browser-default), 
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+	border: none;
+	background-color: #fbfbfb;
+	border-radius: 8px;
+	width: 70%;
+	box-shadow: 0 10px 35px rgb(0 0 0 / 20%);
+	color: var(--secondary);
+	padding-left: 10px;
+}
+
+input[type=text]:not(.browser-default)+label, 
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+	text-align: center;
+	color: var(--text-primary);
+}
+
+.input-field > label:not(.label-icon).active {
+    /* transform: translateY(-14px) scale(0.8);
+    transform-origin: 0px 0px; */
+    display: none;
 }
 
 @media (max-width: 768px) {
