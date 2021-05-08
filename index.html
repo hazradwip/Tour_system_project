@@ -44,9 +44,9 @@
   </nav>
   <!-- End of Navbar -->
 
-
-  <div class="slider">
-    <ul class="slides">
+  <!-- Slider Images -->
+  <div class="slider center-align">
+    <ul class="slides center-align">
       <li>
         <img src="./images/gangtok.jpg"> <!-- random image -->
         <div class="caption center-align">
@@ -77,11 +77,25 @@
       </li>
     </ul>
   </div>
+  <!-- End of Slider Images -->
 
   <div class="container">
-    <div class="input-field center-align">
-      <input id="search-cities" type="text" class="validate">
-      <label for="search-cities"><i class="fas fa-search"></i>  Enter City Name</label>
+
+    <div class="card">
+      <h5 class="center-align">Search Packages</h5>
+      <form action="" class="center-align" id="search-package">
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <input id="from-city" type="text" class="validate">
+            <label for="from-city">From City</label>
+          </div>
+          <div class="input-field col l6 s12">
+            <input id="destination-city" type="text" class="validate">
+            <label for="destination-city">Destination City</label>
+          </div>
+        </div>
+        <button class="btn-primary center-align">Search</button>
+      </form>
     </div>
 
     <p>&nbsp;</p>

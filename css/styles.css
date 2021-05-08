@@ -1,22 +1,28 @@
 :root {
-    --primary: #E46F44;
-    --secondary: #1A385A;
-    --primary-light: #E8AA9B;
-    --secondary-light: #769ABE;
+    --primary: #1A385A;
+    --secondary: #ddeeff;
+    --bg-primary: #fcfcfc;
 }
 
 body{
-    background-color:#fbfbfb;
+    background-color:var(--bg-primary);
     font-family: 'Inter', sans-serif;
 }
 
 nav {
     line-height: 60px;
-    background-color: #fbfbfb;
+    background-color: var(--bg-primary);
 }
 
 nav .brand-logo {
-    color: var(--secondary);
+    color: var(--primary);
+}
+
+h5 {
+    padding-top: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--primary);
 }
 
 .slider .indicators .indicator-item {
@@ -25,11 +31,11 @@ nav .brand-logo {
 }
 
 .slider .indicators .indicator-item.active {
-    background-color: var(--secondary);
+    background-color: var(--primary);
 }
 
 .slider .slides li .caption {
-    color: #fbfbfb;
+    color: var(--bg-primary);
     position: absolute;
     top: 40%;
     left: 15%;
@@ -41,17 +47,16 @@ nav .brand-logo {
     width: 100%;
     background-size: cover;
     background-position: center;
-    opacity: 0.75;
 }
 
 .slider-text {
-    color: #fbfbfb;
+    color: var(--bg-primary);
     text-shadow: 2px 2px 5px black;
 }
 
 .nav-items {
-    background-color: rgba(118, 154, 190, 0.3);
-    color: var(--secondary);
+    background-color: var(--secondary);
+    color: var(--primary);
     margin: 0.75rem;
     line-height: 36px;
     height: 2.5rem;
@@ -67,44 +72,89 @@ nav .brand-logo {
     border: 2px solid var(--primary);
     text-shadow: none;
     font-weight: 500;
+    color: var(--bg-primary);
 }
 
 .btn-primary:hover {
-    background-color: #fbfbfb;
-    color: var(--secondary);
+    background-color: var(--bg-primary);
+    color: var(--primary);
     font-weight: 600;
 }
-
-.btn-secondary {
+/* 
+.btn-primary {
     color: var(--primary);
     padding: 0 25px;
     border-radius: 5px;
+} */
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+}
+
+#search-package {
+    padding: 1.5rem 5rem;
+}
+
+#search-package .row {
+    margin-bottom: 0;
 }
 
 input[type=text]:not(.browser-default), 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-	border: none;
-	background-color: #fbfbfb;
-	border-radius: 8px;
-	width: 70%;
-	box-shadow: 0 10px 35px rgb(0 0 0 / 20%);
-	color: var(--secondary);
+	width: 100%;
+	color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border: 2px solid var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+    box-shadow: none;
 	padding-left: 10px;
+}
+
+
+input.valid[type=text]:not(.browser-default) {
+    box-shadow: none;
+    border-bottom: 1px solid var(--primary);
+
 }
 
 input[type=text]:not(.browser-default)+label, 
 input[type=text]:not(.browser-default):focus:not([readonly])+label {
-	text-align: center;
+	/* text-align: center; */
 	color: var(--text-primary);
+    padding-left: 14px;
 }
 
 .input-field > label:not(.label-icon).active {
-    /* transform: translateY(-14px) scale(0.8);
-    transform-origin: 0px 0px; */
-    display: none;
+    transform: translateY(-14px) scale(0.8);
+    transform-origin: 0px 0px;
+}
+
+#from-city, #destination-city {
+    font-weight: 500;
+    text-indent: 10px;
+}
+
+@media (min-width: 769px) {
+    .slider .slides {
+        width: 80%;
+        background-color: rgba(118, 154, 190, 0.0);
+        margin-top: 14px;
+    }
+
+    .slider .slides li img {
+        width: 80%;
+        border-radius: 8px;
+    }
 }
 
 @media (max-width: 768px) {
-    
+    #search-package {
+        padding: 1.5rem 1rem;
+    }
 }
 
