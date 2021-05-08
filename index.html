@@ -1,146 +1,170 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Materialize JS -->
+  <script src="./scripts/materialize.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Travellopia</title>
 </head>
+
 <body>
+
+  <!-- Navbar -->
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Travellopia</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="">My Account</a></li>
-        <li><a href="">Contact us</a></li>
-        <li><a href="">LogIn/SignUp</a></li>
-        <li><a href="">Others</a></li>
-      </ul>
+      <div class="container">
+        <a href="#" class="brand-logo">Travellopia</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="" class="nav-items">Login</a></li>
+          <li><a href="" class="nav-items">Sign Up</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
- 
-  <div class="slider">
-    <ul class="slides">
+  <!-- End of Navbar -->
+
+  <!-- Slider Images -->
+  <div class="slider center-align">
+    <ul class="slides center-align">
       <li>
-        <img src="gangtok.jpg"> <!-- random image -->
+        <img src="./images/gangtok.jpg"> <!-- random image -->
         <div class="caption center-align">
-          <h3 class="teal-text text-darken-4">Trending Packages!</h3>
-          <h5 class="teal-text text-darken-4">Let's Visit</h5>
+          <h3 class="slider-text">Trending Packages!</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
       <li>
-        <img src="Kedarnath.jpg"> <!-- random image -->
+        <img src="./images/Kedarnath.jpg"> <!-- random image -->
         <div class="caption center-align">
-          <h3 class="black-text">Trending Packages</h3>
-          <h5 class="black-text">Let's Visit</h5>
+          <h3 class="slider-text">Trending Packages</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
       <li>
-        <img src="ladakh.jpg"> <!-- random image -->
+        <img src="./images/ladakh.jpg"> <!-- random image -->
         <div class="caption center-align">
-          <h3 class="black-text">Trending Packages</h3>
-          <h5 class="black-text">Let's Visit</h5>
+          <h3 class="slider-text">Trending Packages</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
       <li>
-        <img src="ooty.jpg"> <!-- random image -->
+        <img src="./images/ooty.jpg"> <!-- random image -->
         <div class="caption center-align">
-          <h3 class="black-text">Trending Packages</h3>
-          <h5 class="black-text">Let's Visit</h5>
+          <h3 class="slider-text">Trending Packages</h3>
+          <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
     </ul>
   </div>
-  <div>
-    <h3 class="center-align">Search By City</h3>
+  <!-- End of Slider Images -->
+
+  <div class="container">
+
+    <div class="card">
+      <h5 class="center-align">Search Packages</h5>
+      <form action="" class="center-align" id="search-package">
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <input id="from-city" type="text" class="validate">
+            <label for="from-city">From City</label>
+          </div>
+          <div class="input-field col l6 s12">
+            <input id="destination-city" type="text" class="validate">
+            <label for="destination-city">Destination City</label>
+          </div>
+        </div>
+        <button class="btn-primary center-align">Search</button>
+      </form>
+    </div>
+
+    <p>&nbsp;</p>
+
+    <div>
+      <h5 class="center-align">Trending Cities</h5>
+    </div>
+
+    <div class="row">
+      <div class="col l3 s12 m7">
+        <div class="card small #4db6ac teal lighten-3">
+          <div class="card-image">
+            <img src="./images/ooty.jpg">
+            <!--<span class="card-title"><span class="black-text">Ooty</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text center-align">Ooty</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 s12 m7">
+        <div class="card small small #ff8a80 red accent-1">
+          <div class="card-image">
+            <img src="./images/gangtok.jpg">
+            <!--<span class="card-title"><span class="black-text">Sikkim</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text center-align">Sikkim</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 s12 m7">
+        <div class="card small #4db6ac teal lighten-3">
+          <div class="card-image">
+            <img src="./images/Kedarnath.jpg">
+            <!--<span class="card-title"><span class="black-text">Kedarnath</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text center-align">Kedarnath</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col l3 s12 m7">
+        <div class="card small #ff8a80 red accent-1">
+          <div class="card-image">
+            <img src="./images/ladakh.jpg">
+            <!--<span class="card-title"><span class="black-text">Ladakh</span></span>-->
+          </div>
+
+          <div class="card-action center-align">
+            <a href="#"><span class="black-text ">Ladakh</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4 class="left-align">Let's plan your holiday</h4>
+    </div>
+
+    <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#four!"><img src="./images/hanle.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="./images/ladakh.jpg"></a>
+    </div>
   </div>
 
-  <div class="row">
-    <div class="col l3 s12 m7">
-      <div class="card small #4db6ac teal lighten-3">
-        <div class="card-image">
-          <img src="ooty.jpg">
-          <!--<span class="card-title"><span class="black-text">Ooty</span></span>-->
-        </div>
-        
-        <div class="card-action center-align">
-         <a href="#"><span class="black-text center-align">Ooty</span></a>
-        </div>
-      </div>
-    </div>
-    <div class="col l3 s12 m7">
-      <div class="card small small #ff8a80 red accent-1">
-        <div class="card-image">
-          <img src="gangtok.jpg">
-          <!--<span class="card-title"><span class="black-text">Sikkim</span></span>-->
-        </div>
-        
-        <div class="card-action center-align">
-          <a href="#"><span class="black-text center-align">Sikkim</span></a>
-        </div>
-      </div>
-    </div>
-    <div class="col l3 s12 m7">
-      <div class="card small #4db6ac teal lighten-3">
-        <div class="card-image">
-          <img src="Kedarnath.jpg">
-          <!--<span class="card-title"><span class="black-text">Kedarnath</span></span>-->
-        </div>
-        
-        <div class="card-action center-align">
-          <a href="#"><span class="black-text center-align">Kedarnath</span></a>
-        </div>
-      </div>
-    </div>
-    <div class="col l3 s12 m7">
-      <div class="card small #ff8a80 red accent-1">
-        <div class="card-image">
-          <img src="ladakh.jpg">
-          <!--<span class="card-title"><span class="black-text">Ladakh</span></span>-->
-        </div>
-        
-        <div class="card-action center-align">
-          <a href="#"><span class="black-text ">Ladakh</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div >
-    <h4 class="left-align">Let's plan your holiday</h4>
-  </div>
-    
-  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#four!"><img src="hanle.jpg"></a>
-    <a class="carousel-item" href="#five!"><img src="ladakh.jpg"></a>
-</div>
- 
+  <script src="./scripts/styles.js"></script>
+</body>
 
-
- 
-
-
-
-
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-       $('.slider').slider({full_width: true,
-      height:300});
-      $('.carousel.carousel-slider').carousel({
-    fullWidth: true
-  });
-       
-     });
-     
-  
-
-     
- </script>
-  
-           
-    </body>
-    
 </html>
-
-
