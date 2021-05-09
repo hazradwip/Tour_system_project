@@ -18,7 +18,7 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
     rel="stylesheet">
 
   <!-- Icons -->
@@ -48,31 +48,59 @@
   <div class="slider center-align">
     <ul class="slides center-align">
       <li>
-        <img src="./images/gangtok.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 class="slider-text">Trending Packages!</h3>
-          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        <img src="./images/slider/slider_kedarkanth.jpg"> <!-- random image -->
+        <div class="caption left-align">
+            <span class="slider-text">Trending Package</span>
+            <h4 class="slider-text">Kedarkanth</h4><br>
+            <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
       <li>
-        <img src="./images/Kedarnath.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 class="slider-text">Trending Packages</h3>
-          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        <img src="./images/slider/slider_manali.jpg"> <!-- random image -->
+        <div class="caption left-align">
+            <span class="slider-text">Trending Package</span>
+            <h4 class="slider-text">Manali</h4><br>
+            <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
       <li>
-        <img src="./images/ladakh.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 class="slider-text">Trending Packages</h3>
-          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        <img src="./images/slider/slider_gangtok.jpg"> <!-- random image -->
+        <div class="caption left-align">
+            <span class="slider-text">Trending Package</span>
+            <h4 class="slider-text">Gangtok</h4><br>
+            <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
       <li>
-        <img src="./images/ooty.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 class="slider-text">Trending Packages</h3>
-          <a class="slider-text btn-primary" href="">Let's Visit</a>
+        <img src="./images/slider/slider_arunachal.jpg"> <!-- random image -->
+        <div class="caption left-align">
+            <span class="slider-text">Trending Package</span>
+            <h4 class="slider-text">Arunachal Pradesh</h4><br>
+            <a class="slider-text btn-primary" href="">Let's Visit</a>
+        </div>
+      </li>
+      <li>
+        <img src="./images/slider/slider_maolinlong.jpg"> <!-- random image -->
+        <div class="caption left-align">
+            <span class="slider-text">Trending Package</span>
+            <h4 class="slider-text">Meghalaya</h4><br>
+            <a class="slider-text btn-primary" href="">Let's Visit</a>
+        </div>
+      </li>
+      <li>
+        <img src="./images/slider/slider_kerala.jpg"> <!-- random image -->
+        <div class="caption left-align">
+            <span class="slider-text">Trending Package</span>
+            <h4 class="slider-text">Kerala</h4><br>
+            <a class="slider-text btn-primary" href="">Let's Visit</a>
+        </div>
+      </li>
+      <li>
+        <img src="./images/slider/slider_andaman.jpg"> <!-- random image -->
+        <div class="caption left-align">
+            <span class="slider-text">Trending Package</span>
+            <h4 class="slider-text">Andaman</h4><br>
+            <a class="slider-text btn-primary" href="">Let's Visit</a>
         </div>
       </li>
     </ul>
@@ -81,27 +109,31 @@
 
   <div class="container">
 
-    <div class="card">
+    <div class="card center-align" id="search-package">
       <h5 class="center-align">Search Packages</h5>
-      <form action="" class="center-align" id="search-package">
+      <form action="" class="center-align">
         <div class="row">
-          <div class="input-field col l6 s12">
+          <div class="input-field col l5 s12">
             <input id="from-city" type="text" class="validate">
-            <label for="from-city">From City</label>
+            <label for="from-city">From City <i class="fas fa-map-marker-alt right"></i></label>
           </div>
-          <div class="input-field col l6 s12">
+          <div class="col l2 s12">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="input-field col l5 s12">
             <input id="destination-city" type="text" class="validate">
-            <label for="destination-city">Destination City</label>
+            <label for="destination-city">To City <i class="fas fa-map-marker-alt right"></i></label>
           </div>
         </div>
-        <button class="btn-primary center-align">Search</button>
+        <button class="btn-primary center-align" id="search-package-btn">Search</button>
       </form>
     </div>
 
     <p>&nbsp;</p>
 
     <div>
-      <h5 class="center-align">Trending Cities</h5>
+      <h5 class="">Trending Cities</h5>
+      <hr>
     </div>
 
     <div class="row">

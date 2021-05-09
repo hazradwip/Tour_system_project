@@ -1,7 +1,8 @@
 $(document).ready(function () {
+    sliderHeight =  screen.width < 769 ? 300: 400;
     $('.slider').slider({
         full_width: true,
-        height: 300
+        height: sliderHeight
     });
     $('.carousel.carousel-slider').carousel({
         fullWidth: true
