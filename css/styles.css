@@ -1,12 +1,25 @@
 :root {
-    --primary: #1A385A;
-    --secondary: #ddeeff;
+    --primary: #0B72EC;
+    --secondary: #EBF0FF;
+    --accent: #F14C4C;
     --bg-primary: #fcfcfc;
+    --text-primary: #141517;
 }
 
 body{
     background-color:var(--bg-primary);
     font-family: 'Inter', sans-serif;
+    color: var(--text-primary);
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+hr {
+    color: #CCCCCC !important;
+    opacity: 0.3;
 }
 
 nav {
@@ -16,15 +29,21 @@ nav {
 
 nav .brand-logo {
     color: var(--primary);
+    font-weight: 600;
 }
 
-h5 {
-    padding-top: 1.5rem;
-    margin-bottom: 0;
-    font-weight: 700;
+.nav-items {
+    background-color: var(--secondary);
     color: var(--primary);
+    margin: 0.75rem;
+    line-height: 36px;
+    height: 2.5rem;
+    padding: 0 25px;
+    border-radius: 300px;
+    font-weight: 600;
 }
 
+/* =============== Home Page Slider ============= */
 .slider .indicators .indicator-item {
     height: 10px;
     width: 10px;
@@ -37,9 +56,15 @@ h5 {
 .slider .slides li .caption {
     color: var(--bg-primary);
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 15%;
     width: 70%;
+}
+
+.caption h4 {
+    margin-top: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
 }
 
 .slider .slides li img {
@@ -49,22 +74,55 @@ h5 {
     background-position: center;
 }
 
+
 .slider-text {
     color: var(--bg-primary);
     text-shadow: 2px 2px 5px black;
 }
 
-.nav-items {
-    background-color: var(--secondary);
-    color: var(--primary);
-    margin: 0.75rem;
-    line-height: 36px;
-    height: 2.5rem;
-    padding: 0 25px;
-    border-radius: 300px;
+/* ============================================= */
+
+/* ================= Search Box ================ */
+#search-package h5 {
+    padding-top: 1.25rem;
+    margin-bottom: 0;
     font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary);
 }
 
+#search-package {
+    margin: auto 15%;
+    margin-top: -8rem;
+    z-index: 10;
+    width: 70%;
+}
+
+#search-package .row {
+    margin-bottom: 0;
+}
+
+#search-package .row .col {
+    padding: 0;
+}
+
+#search-package .row .col:nth-child(2) {
+    font-size: 1.25rem;
+    padding-top: 1.55rem;
+    color: #CCCCCC;
+}
+
+#search-package-btn {
+    margin-bottom: -1.5rem;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+}
+/* ====================================== */
+
+/* ============== Buttons =============== */
 .btn-primary {
     background-color: var(--primary);
     padding: 10px 25px;
@@ -73,6 +131,7 @@ h5 {
     text-shadow: none;
     font-weight: 500;
     color: var(--bg-primary);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
 }
 
 .btn-primary:hover {
@@ -80,65 +139,64 @@ h5 {
     color: var(--primary);
     font-weight: 600;
 }
-/* 
-.btn-primary {
-    color: var(--primary);
-    padding: 0 25px;
-    border-radius: 5px;
-} */
 
-.card {
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
-}
+/* ====================================== */
 
-#search-package {
-    padding: 1.5rem 5rem;
-}
-
-#search-package .row {
-    margin-bottom: 0;
-}
+/* =========== Input Fields =========== */
 
 input[type=text]:not(.browser-default), 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-	width: 100%;
-	color: var(--primary);
-    border: 1px solid var(--primary);
-    border-radius: 8px;
-}
-
-input[type=text]:not(.browser-default):focus:not([readonly]) {
-    border: 2px solid var(--secondary);
-    border-bottom: 2px solid var(--secondary);
+	width: 70%;
+	color: var(--text-primary);
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
     box-shadow: none;
-	padding-left: 10px;
+    border-radius: 100px;
 }
-
 
 input.valid[type=text]:not(.browser-default) {
     box-shadow: none;
-    border-bottom: 1px solid var(--primary);
-
+    border: 2px solid var(--primary);
 }
 
 input[type=text]:not(.browser-default)+label, 
-input[type=text]:not(.browser-default):focus:not([readonly])+label {
-	/* text-align: center; */
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=text]:not(.browser-default).validate+label {
 	color: var(--text-primary);
-    padding-left: 14px;
+    width: 60%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    left: 20%;
 }
 
 .input-field > label:not(.label-icon).active {
+    width: 30% !important;
     transform: translateY(-14px) scale(0.8);
     transform-origin: 0px 0px;
+    background-color: var(--bg-primary);
+    font-weight: 500 !important;
+    color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.input-field > label:not(.label-icon).active i {
+    display: none;
+}
+
+label i {
+    color: #CCCCCC;
+    font-size: 1rem;
+    padding: 5px;
 }
 
 #from-city, #destination-city {
-    font-weight: 500;
-    text-indent: 10px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-indent: 14px;
 }
 
+/* =============================================== */
+
+/* =============== Media Queries ================= */
 @media (min-width: 769px) {
     .slider .slides {
         width: 80%;
@@ -153,8 +211,38 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
 }
 
 @media (max-width: 768px) {
+    #search-package h5 {
+        padding-top: 1rem;
+    }
+    
     #search-package {
-        padding: 1.5rem 1rem;
+        margin: auto 5%;
+        margin-top: -8rem;
+        z-index: 10;
+        width: 90%;
+    }
+    
+    #search-package .row {
+        margin-bottom: 0;
+    }
+    
+    #search-package .row .col {
+        padding: 0;
+    }
+    
+    #search-package .row .col:nth-child(2) {
+        font-size: 1.25rem;
+        padding-top: 0rem;
+        color: #CCCCCC;
+    }
+    
+    #search-package-btn {
+        margin-bottom: -1.5rem;
+    }
+
+    .input-field > label:not(.label-icon).active {
+        width: 30% !important;
+        transform: translateY(-14px) scale(0.7);
     }
 }
 
