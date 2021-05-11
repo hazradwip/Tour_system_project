@@ -140,6 +140,54 @@ nav .brand-logo {
     font-weight: 600;
 }
 
+#covid-container{
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+#covid-btn{
+    margin-top: 20px;
+}
+#btn-txt{
+    font-weight: 700;
+    
+    
+}
+#covid-txt{
+    font-weight: 800;
+    padding-top: 25px;
+}
+
+#covid-box{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    padding: auto;
+    
+    
+}
+
+#card-img{
+    border-radius: 15px;
+}
+
+#card-txt{
+    font-weight: 800;
+}
+#card-txt2{
+    font-weight: 300;
+    font-size: x-small;
+}
+
+#card-btn{
+    border-radius: 25px;
+    margin-left: 5px;
+}
+
+
+
+
 /* ====================================== */
 
 /* =========== Input Fields =========== */
