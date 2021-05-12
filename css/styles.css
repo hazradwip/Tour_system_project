@@ -258,21 +258,36 @@ footer ul li a i {
     font-size: 0.95rem;
 }
 
-.form-container{
+.form-container {
     background-color: var(--secondary);
-    padding: 20px;
+    padding: 1.5rem 3.5rem;
     border-radius: 8px;
     padding-bottom: 50px;
 
 }
 
-.form-container h5{
-    font-weight: 700;
-    font-size: small;
-    padding-left: 25px;
+.form-container span {
+    font-weight: 500;
+}
+/* 
+.datepicker-date-display {
+    background-color: var(--primary);
+} */
+
+.datepicker-controls .select-wrapper input {
+    border: none !important;
+    width: 50px !important;
+    text-indent: 0 !important;
 }
 
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+    color: var(--primary);
+    font-weight: 500;
+}
 
+.datepicker-done {
+    background-color: var(--secondary);
+}
 
 
 .page-footer {
@@ -285,12 +300,15 @@ footer ul li a i {
 
 input[type=text]:not(.browser-default), 
 input[type=text]:not(.browser-default):focus:not([readonly]) {
-	width: 70%;
+	width: 80%;
 	color: var(--text-primary);
     border: 2px solid rgba(0, 0, 0, 0.25);
     border-bottom: 2px solid rgba(0, 0, 0, 0.25);
     box-shadow: none;
     border-radius: 100px;
+    background-color: var(--bg-primary);
+    text-indent: 16px;
+    font-weight: 500;
 }
 
 input.valid[type=text]:not(.browser-default) {
@@ -303,18 +321,25 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label,
 input[type=text]:not(.browser-default).validate+label {
 	color: var(--text-primary);
     width: 60%;
-    font-weight: 700;
-    font-size: 1.25rem;
-    left: 20%;
+    font-weight: 500;
+    font-size: 1rem;
+    left: 22%;
+    margin-top: 2px;
 }
 
-.input-field > label:not(.label-icon).active {
+#input-from > label:not(.label-icon).active,
+#input-to > label:not(.label-icon).active {
     width: 30% !important;
     transform: translateY(-14px) scale(0.8);
     transform-origin: 0px 0px;
     background-color: var(--bg-primary);
     font-weight: 500 !important;
     color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.input-field > label:not(.label-icon).active {
+    color: rgba(0, 0, 0, 0) !important;
+    transition: 0.3s ease;
 }
 
 .input-field > label:not(.label-icon).active i {
@@ -324,6 +349,13 @@ input[type=text]:not(.browser-default).validate+label {
 label i {
     color: #CCCCCC;
     font-size: 1rem;
+    padding: 3.5px;
+}
+
+#input-from > label i,
+#input-to > label i {
+    color: #CCCCCC;
+    font-size: 1rem;
     padding: 5px;
 }
 
@@ -331,10 +363,17 @@ label i {
     font-weight: 700;
     font-size: 1.25rem;
     text-indent: 14px;
+    width: 70%;
 }
 
-
-
+#from-city+label, #destination-city+label {
+    color: var(--text-primary);
+    width: 60%;
+    font-weight: 700;
+    font-size: 1.25rem;
+    left: 20%;
+    margin-top: 0;
+}
 
 
 /* =============================================== */
@@ -397,14 +436,18 @@ label i {
         width: 84vw;
     }
 
+    .form-container {
+        padding: 1.5rem 1.5rem;
+    }
+
     .input-field > label:not(.label-icon).active {
         width: 30% !important;
         transform: translateY(-14px) scale(0.7);
     }
 }
 
-body::-webkit-scrollbar {
-    width: 0.3rem;
+body::-webkit-scrollbar, ul::-webkit-scrollbar {
+    width: 0.35rem;
 }
   
 body::-webkit-scrollbar-track {

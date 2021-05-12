@@ -8,6 +8,7 @@ $(document).ready(function () {
         fullWidth: true
     });
 
+    $('.datepicker').datepicker();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
