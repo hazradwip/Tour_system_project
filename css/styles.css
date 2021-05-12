@@ -258,6 +258,23 @@ footer ul li a i {
     font-size: 0.95rem;
 }
 
+.form-container{
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 8px;
+    padding-bottom: 50px;
+
+}
+
+.form-container h5{
+    font-weight: 700;
+    font-size: small;
+    padding-left: 25px;
+}
+
+
+
+
 .page-footer {
     background-color: #141517;
 }
@@ -315,6 +332,10 @@ label i {
     font-size: 1.25rem;
     text-indent: 14px;
 }
+
+
+
+
 
 /* =============================================== */
 
