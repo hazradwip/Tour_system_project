@@ -310,8 +310,40 @@ input[type=text]:not(.browser-default):focus:not([readonly]) {
     text-indent: 16px;
     font-weight: 500;
 }
+input[type=email]:not(.browser-default), 
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+	width: 80%;
+	color: var(--text-primary);
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    border-radius: 100px;
+    background-color: var(--bg-primary);
+    text-indent: 16px;
+    font-weight: 500;
+}
+input[type=password]:not(.browser-default), 
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+	width: 80%;
+	color: var(--text-primary);
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    border-radius: 100px;
+    background-color: var(--bg-primary);
+    text-indent: 16px;
+    font-weight: 500;
+}
 
 input.valid[type=text]:not(.browser-default) {
+    box-shadow: none;
+    border: 2px solid var(--primary);
+}
+input.valid[type=email]:not(.browser-default) {
+    box-shadow: none;
+    border: 2px solid var(--primary);
+}
+input.valid[type=password]:not(.browser-default) {
     box-shadow: none;
     border: 2px solid var(--primary);
 }
@@ -324,6 +356,26 @@ input[type=text]:not(.browser-default).validate+label {
     font-weight: 500;
     font-size: 1rem;
     left: 22%;
+    margin-top: 2px;
+}
+input[type=email]:not(.browser-default)+label, 
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default).validate+label {
+	color: var(--text-primary);
+    width: 60%;
+    font-weight: 500;
+    font-size: 1rem;
+    left: 22%;
+    margin-top: 2px;
+}
+input[type=password]:not(.browser-default)+label, 
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default).validate+label {
+	color: var(--text-primary);
+    width: 60%;
+    font-weight: 500;
+    font-size: 1rem;
+    left:22%;
     margin-top: 2px;
 }
 
@@ -373,6 +425,22 @@ label i {
     font-size: 1.25rem;
     left: 20%;
     margin-top: 0;
+}
+
+
+#login-container{
+    border-radius: 10px;
+    background-color:  var(--secondary);
+    padding: 50px;
+    padding-left: 220px;
+    
+}
+
+#card{
+    width: 500px;
+    align-items: center;
+    padding: 20px;
+    
 }
 
 
