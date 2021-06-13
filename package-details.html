@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Materialize JS -->
+  <script src="./scripts/materialize.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/90f1fd2d1e.js" crossorigin="anonymous"></script>
+
+  <title>Travellopia</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo">Travellopia</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="login.html" class="nav-items">Login</a></li>
+          <li><a href="signup.html" class="nav-items">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--==================Image and booking container===============-->
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h5 class="package-name">City Name</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col l9 s12">
+        <img class="pimg" src="images/Kedarnath.jpg">
+        <a href="">
+          <h4 id="bottom-left">View All images</h4>
+        </a>
+      </div>
+
+      <div class="col l3 s12">
+        <div class="booking-window" id="">
+          <div id="price">
+            <span>₹52,000</span> per person
+            <br>
+            <br>
+            (Including all taxes.)
+          </div>
+          <div>
+            <h5 style="text-align: center;">
+              <br>
+              Travel Dates
+            </h5>
+          </div>
+          <div>
+            <a href="" class="chip">5th June,21</a>
+            <a href="" class="chip">5th June,21</a>
+            <a href="" class="chip">5th June,21</a>
+          </div>
+          <br>
+          <div>
+            <button class="btn-primary center-align" id="">Book Now</button>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <!--==============Package includes container========r-->
+    <div class="container" id="package-inc">
+      <div class="row">
+        <div class="col s12">
+          <h5>Package Includes</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col l2 s4 center-align">
+          <i class="icon"><img src="./images/icons/airplane.svg" alt="" /></i><br>
+          <span>Flights</span>
+        </div>
+        <div class="col l2 s4 center-align">
+          <i class="icon"><img src="./images/icons/binoculars.svg" alt="" /></i><br>
+          <span>Sightseens</span>
+        </div>
+        <div class="col l2 s4 center-align">
+          <i class="icon"><img src="./images/icons/hotel.svg" alt="" /></i><br>
+          <span>Hotels</span>
+        </div>
+        <div class="col l2 s4 center-align">
+          <i class="icon"><img src="./images/icons/car.svg" alt="" /></i><br>
+          <span>Transfers</span>
+        </div>
+        <div class="col l2 s4 center-align">
+          <i class="icon"><img src="./images/icons/dinner.svg" alt="" /></i><br>
+          <span>Meals</span>
+        </div>
+      </div>
+      <hr>
+      <div class="center-align">
+        <i class="far fa-clock"></i>
+        <span style="padding-left: 5px;"> Package Duration : 3 Days & 4 Nights </span>
+      </div>
+
+    </div>
+
+
+
+    <!--======================tabs==============-->
+
+    <p>&nbsp;</p>
+    <div class="row">
+      <div class="col s12">
+        <ul id="tabs" class="tabs">
+          <li class="tab col s3"><a href="#test-swipe-1">Day Wise Activity</a></li>
+          <li class="tab col s3"><a href="#test-swipe-2">Hotel Details</a></li>
+          <li class="tab col s3"><a href="#test-swipe-3">Additional Information</a></li>
+        </ul>
+      </div>
+
+      <!--==================================test swipe 1==========================================-->
+
+      <hr>
+      <div id="test-swipe-1" class="col s12" style="display: flex;">
+        <div class="timeline">
+          <div class="timeline-container primary">
+            <div class="timeline-icon">
+              <i class="far fa-check-circle"></i>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-title"><span class="day-badge">Day 1</span></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa
+                fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam
+                culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container danger">
+            <div class="timeline-icon">
+              <i class="far fa-check-circle"></i>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-title"><span class="day-badge">Day 1</span></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa
+                fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam
+                culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container success">
+            <div class="timeline-icon">
+              <i class="far fa-check-circle"></i>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-title"><span class="day-badge">Day 1</span></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa
+                fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam
+                culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+          <div class="timeline-container warning">
+            <div class="timeline-icon">
+              <i class="far fa-check-circle"></i>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-title"><span class="day-badge">Day 1</span></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa
+                fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam
+                culpa, repellendus esse commodi deserunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================================test swipe 2============================================-->
+    <div id="test-swipe-2" class="col s12 ">
+      <div class="row">
+        <div class="col l5 s12">
+          <img id="tab-image" src="images/gangtok.jpg">
+        </div>
+        <div class="col l7 s12">
+          <h5>Hotel Name</h5>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Hotel Location</span>
+          <br>
+          <br>
+          <span>
+            In publishing and graphic design,
+            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
+            document or a typeface without relying on meaningful content.
+            Lorem ipsum may be used as a placeholder before final copy is available.
+            It is also used to temporarily replace text in a process called greeking,
+            which allows designers to consider the form of a webpage or publication,
+            without the meaning of the text influencing the design.
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l5 s12">
+          <img id="tab-image" src="images/gangtok.jpg">
+        </div>
+        <div class="col l7 s12">
+          <h5>Hotel Name</h5>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Hotel Location</span>
+          <br>
+          <br>
+          <span>
+            In publishing and graphic design,
+            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
+            document or a typeface without relying on meaningful content.
+            Lorem ipsum may be used as a placeholder before final copy is available.
+            It is also used to temporarily replace text in a process called greeking,
+            which allows designers to consider the form of a webpage or publication,
+            without the meaning of the text influencing the design.
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l5 s12">
+          <img id="tab-image" src="images/gangtok.jpg">
+        </div>
+        <div class="col l7 s12">
+          <h5>Hotel Name</h5>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Hotel Location</span>
+          <br>
+          <br>
+          <span>
+            In publishing and graphic design,
+            Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
+            document or a typeface without relying on meaningful content.
+            Lorem ipsum may be used as a placeholder before final copy is available.
+            It is also used to temporarily replace text in a process called greeking,
+            which allows designers to consider the form of a webpage or publication,
+            without the meaning of the text influencing the design.
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--=============test swipe 3==================================-->
+    <div id="test-swipe-3" class="col s12 ">
+
+    </div>
+  </div>
+
+  <!-- ========= Footer =========== -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="grey-text text-lighten-4">About</h6>
+          <p class="grey-text text-lighten-4">Travellopia is dummy website for Web Technology Project of 4th Sem MCA
+            at <a href="https://heritageit.edu" target="_blank">Heritage Institute of Technology</a> mentored by Prof.
+            Subhra Pramanik</p>
+          <br>
+          <h5 class="brand-logo">Travellopia
+            <br><a href="">Admin Login <i class="fas fa-long-arrow-alt-right"></i></a>
+          </h5>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h6 class="grey-text text-lighten-4">Important Links</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-4" href="https://github.com/AmitManna99/Tour_system_project" target="_blank"><i
+                  class="fab fa-github"></i> Source Code</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/amitmanna99" target="_blank"><i
+                  class="fab fa-linkedin"></i> Amit Manna</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/dwip-hazra-40672517a" target="_blank"><i
+                  class="fab fa-linkedin"></i> Dwip Hazra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Travellopia
+        <a class="grey-text text-lighten-4 right" href="#!" style="font-weight: 400;">Developed with ❤️ by Amit &
+          Dwip</a>
+      </div>
+    </div>
+  </footer>
+  <!-- ========= End of Footer =========== -->
+  <script src="./scripts/styles.js"></script>
+</body>
+
+</html>
