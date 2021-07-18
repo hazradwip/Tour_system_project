@@ -169,6 +169,26 @@ footer ul li a i {
     box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
     cursor: pointer;
 }
+.btn-primary2 {
+    background-color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 300px;
+    border: 2px solid var(--primary);
+    text-shadow: none;
+    font-weight: 500;
+    color: var(--bg-primary);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    font-size: x-small;
+    
+}
+.btn-primary2:hover {
+    background-color: var(--bg-primary);
+    color: var(--primary);
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
 
 .btn-primary:hover {
     background-color: var(--bg-primary);
@@ -202,9 +222,19 @@ footer ul li a i {
     font-weight: 400;
     cursor: pointer;
 }
-
+.btn-acc{
+    background-color: var(--accent);
+    color: var(--bg-primary);
+    border-radius: 300px;
+    border: none;
+    padding: 4px 10px;
+    text-shadow: none;
+    font-size: smaller;
+    font-weight:400; 
+}
 .btn-accent:hover {
     box-shadow: 1px 1px 2px rgb(0 0 0 / 45%);
+    border-radius: 300px;
 }
 
 button:focus {
@@ -307,6 +337,16 @@ button:focus {
     margin-right: auto;
 }
 
+.icon-con{
+    background-color: var(--secondary);
+    
+    width: max-content;
+    border-radius: 8px;
+}
+#ic{
+    padding-left: 10px;
+    padding: 10px;
+}
 
 /* ====================================== */
 
@@ -597,6 +637,19 @@ label i {
   .timeline .timeline-container.danger .timeline-icon {
     background: #fd5d93 !important;
   }
+
+#search_con{
+    
+    height: max-content;
+    background-color: var(--secondary);
+    border-radius: 8px;;
+}
+
+#search_c{
+    align-items: center;
+    padding: 30px;
+    padding-top: 40px;
+}
 
 
 /* =============================================== */

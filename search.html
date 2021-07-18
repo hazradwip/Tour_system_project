@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Materialize JS -->
+  <script src="./scripts/materialize.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/90f1fd2d1e.js" crossorigin="anonymous"></script>
+  <!--Slider script-->
+  <link href="nouislider.css" rel="stylesheet">
+  <script src="nouislider.js"></script>
+  <title>Travellopia</title>
+</head>
+
+<body>
+
+  <!-- ============Navbar============== -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo">Travellopia</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="login.html" class="nav-items">Login</a></li>
+          <li><a href="signup.html" class="nav-items">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--=====================End of Navbar=================-->
+
+  <!--=====================Search Contents==================-->
+  <p>&nbsp;</p>
+  <div class="container" id="search_con">
+      <div class="row">
+          <div class="col l4 " id="search_c">
+            <div class="input-field ceter-align">
+                <input id="" type="text" class="validate">
+                <label for=""><span style="font-weight: 900;">From City</span> <i class="fas fa-map-marker-alt right "></i></label>
+            </div>
+          </div>
+          <div class="col l1 " style="padding-top: 60px;font-size: 2rem;">
+            <i class="fas fa-arrows-alt-h"></i>
+          </div>
+          <div class="col l4 " id="search_c">
+            <div class="input-field ceter-align">
+                <input id="" type="text" class="validate">
+                <label for=""><span style="font-weight: 900;">To City</span> <i class="fas fa-map-marker-alt right"></i></label>
+            </div>
+          </div>
+          <div class="col l3 " style="padding: 50px;padding-top: 60px; ">
+            <button class="btn-primary center-align" id="search-package-btn">Search</button>
+          </div>
+      </div>
+    </div>
+
+    <!--=========End of search content====================-->
+
+    <!--==================Search Result========================-->
+
+    <div class="container">
+      <p>&nbsp;</p>
+      <span style="font-weight: 900;">Search Result</span>
+
+      <!--=========Modal Trigger===========-->
+
+      <a class=" modal-trigger" href="#modal1"><span style="color: var(--primary); font-weight: 600; padding-right: 20px;" class="right">
+        <i class="fas fa-sliders-h" style="font-size: 1.2rem; padding-right: 5px;">
+        </i> Filter Result</span></a>
+
+        <!--==========Modal body==============-->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <p style="font-weight: 800;">Filter Search Result</p>
+            <div class="row">
+              <p style="font-weight: 500;">
+              <span>Budget ($2000-$10000)</span>
+              <div id="slider"></div>
+            </div>
+           
+             
+              <!--====Range slider======-->
+              
+              <!--=========End========-->
+            
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Apply</a>
+          </div>
+        </div>
+
+      <hr>
+      <div class="row">
+        <div class="col l4 s12">
+          <div class="card  package-card">
+            <div class="card-image">
+              <img src="./images/gangtok.jpg" alt="">
+            </div>
+            <div class="card-content">
+             <div>
+               <p style="font-weight:700;font-size: small;">Darjeeling-Gangtok-Pel... <span ><button class="btn-acc right">10N/9N</button></span></p>
+               <br>
+             </div>
+             <div>
+              <p style="font-size: x-small;font-weight: 600;">Darjeeling,Gangtok,Pelling,Lachen,Gurudangmar</p>
+             </div>
+             <br>
+             <div class="icon-con">
+              <i class="fas fa-bed" id="ic"></i>
+              <i class="fas fa-plane-departure" id="ic"></i>
+              <i class="fas fa-car-side" id="ic"></i>
+              <i class="fas fa-utensils" id="ic"></i>
+             </div>
+             <br>
+             <div >
+               <p style="font-weight: 800;">$8000<span style="font-size: x-small;">/person</span>
+                <span><button class="btn-primary2 center-align right" >Book Now</button></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 s12">
+          <div class="card  package-card">
+            <div class="card-image">
+              <img src="./images/gangtok.jpg" alt="">
+            </div>
+            <div class="card-content">
+             <div>
+               <p style="font-weight:700;font-size: small;">Darjeeling-Gangtok-Pel... <span ><button class="btn-acc right">10N/9N</button></span></p>
+               <br>
+             </div>
+             <div>
+              <p style="font-size: x-small;font-weight: 600;">Darjeeling,Gangtok,Pelling,Lachen,Gurudangmar</p>
+             </div>
+             <br>
+             <div class="icon-con">
+              <i class="fas fa-bed" id="ic"></i>
+              <i class="fas fa-plane-departure" id="ic"></i>
+              <i class="fas fa-car-side" id="ic"></i>
+              <i class="fas fa-utensils" id="ic"></i>
+             </div>
+             <br>
+             <div >
+               <p style="font-weight: 800;">$8000<span style="font-size: x-small;">/person</span>
+                <span><button class="btn-primary2 center-align right" >Book Now</button></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l4 s12">
+          <div class="card  package-card">
+            <div class="card-image">
+              <img src="./images/gangtok.jpg" alt="">
+            </div>
+            <div class="card-content">
+             <div>
+               <p style="font-weight:700;font-size: small;">Darjeeling-Gangtok-Pel... <span ><button class="btn-acc right">10N/9N</button></span></p>
+               <br>
+             </div>
+             <div>
+              <p style="font-size: x-small;font-weight: 600;">Darjeeling,Gangtok,Pelling,Lachen,Gurudangmar</p>
+             </div>
+             <br>
+             <div class="icon-con">
+              <i class="fas fa-bed" id="ic"></i>
+              <i class="fas fa-plane-departure" id="ic"></i>
+              <i class="fas fa-car-side" id="ic"></i>
+              <i class="fas fa-utensils" id="ic"></i>
+             </div>
+             <br>
+             <div >
+               <p style="font-weight: 800;">$8000<span style="font-size: x-small;">/person</span>
+                <span><button class="btn-primary2 center-align right" >Book Now</button></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col l4 s12">
+            <div class="card  package-card">
+              <div class="card-image">
+                <img src="./images/gangtok.jpg" alt="">
+              </div>
+              <div class="card-content">
+               <div>
+                 <p style="font-weight:700;font-size: small;">Darjeeling-Gangtok-Pel... <span ><button class="btn-acc right">10N/9N</button></span></p>
+                 <br>
+               </div>
+               <div>
+                <p style="font-size: x-small;font-weight: 600;">Darjeeling,Gangtok,Pelling,Lachen,Gurudangmar</p>
+               </div>
+               <br>
+               <div class="icon-con">
+                <i class="fas fa-bed" id="ic"></i>
+                <i class="fas fa-plane-departure" id="ic"></i>
+                <i class="fas fa-car-side" id="ic"></i>
+                <i class="fas fa-utensils" id="ic"></i>
+               </div>
+               <br>
+               <div >
+                 <p style="font-weight: 800;">$8000<span style="font-size: x-small;">/person</span>
+                  <span><button class="btn-primary2 center-align right" >Book Now</button></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 s12">
+            <div class="card  package-card">
+              <div class="card-image">
+                <img src="./images/gangtok.jpg" alt="">
+              </div>
+              <div class="card-content">
+               <div>
+                 <p style="font-weight:700;font-size: small;">Darjeeling-Gangtok-Pel... <span ><button class="btn-acc right">10N/9N</button></span></p>
+                 <br>
+               </div>
+               <div>
+                <p style="font-size: x-small;font-weight: 600;">Darjeeling,Gangtok,Pelling,Lachen,Gurudangmar</p>
+               </div>
+               <br>
+               <div class="icon-con">
+                <i class="fas fa-bed" id="ic"></i>
+                <i class="fas fa-plane-departure" id="ic"></i>
+                <i class="fas fa-car-side" id="ic"></i>
+                <i class="fas fa-utensils" id="ic"></i>
+               </div>
+               <br>
+               <div >
+                 <p style="font-weight: 800;">$8000<span style="font-size: x-small;">/person</span>
+                  <span><button class="btn-primary2 center-align right" >Book Now</button></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 s12">
+            <div class="card  package-card">
+              <div class="card-image">
+                <img src="./images/gangtok.jpg" alt="">
+              </div>
+              <div class="card-content">
+               <div>
+                 <p style="font-weight:700;font-size: small;">Darjeeling-Gangtok-Pel... <span ><button class="btn-acc right">10N/9N</button></span></p>
+                 <br>
+               </div>
+               <div>
+                <p style="font-size: x-small;font-weight: 600;">Darjeeling,Gangtok,Pelling,Lachen,Gurudangmar</p>
+               </div>
+               <br>
+               <div class="icon-con">
+                <i class="fas fa-bed" id="ic"></i>
+                <i class="fas fa-plane-departure" id="ic"></i>
+                <i class="fas fa-car-side" id="ic"></i>
+                <i class="fas fa-utensils" id="ic"></i>
+               </div>
+               <br>
+               <div >
+                 <p style="font-weight: 800;">$8000<span style="font-size: x-small;">/person</span>
+                  <span><button class="btn-primary2 center-align right" >Book Now</button></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <p>&nbsp;</p>
+
+      <p class="center" style="font-weight: 600;">Don't like this packages? <span style="color: var(--primary);text-decoration: underline;">See our trending packages.</span></p>
+
+      <p>&nbsp;</p>
+    </div>
+ 
+
+    <!--==================End Search Result========================-->
+
+    <!-- ========= Footer =========== -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="grey-text text-lighten-4">About</h6>
+          <p class="grey-text text-lighten-4">Travellopia is dummy website for Web Technology Project of 4th Sem MCA
+            at <a href="https://heritageit.edu" target="_blank">Heritage Institute of Technology</a> mentored by Prof.
+            Subhra Pramanik</p>
+          <br>
+          <h5 class="brand-logo">Travellopia
+            <br><a href="">Admin Login <i class="fas fa-long-arrow-alt-right"></i></a>
+          </h5>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h6 class="grey-text text-lighten-4">Important Links</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-4" href="https://github.com/AmitManna99/Tour_system_project" target="_blank"><i
+                  class="fab fa-github"></i> Source Code</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/amitmanna99" target="_blank"><i
+                  class="fab fa-linkedin"></i> Amit Manna</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/dwip-hazra-40672517a" target="_blank"><i
+                  class="fab fa-linkedin"></i> Dwip Hazra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Travellopia
+        <a class="grey-text text-lighten-4 right" href="#!" style="font-weight: 400;">Developed with ❤️ by Amit &
+          Dwip</a>
+      </div>
+    </div>
+  </footer>
+  <!-- ========= End of Footer =========== -->
+
+    
+  <script>$(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+  <script>
+   var slider = document.getElementById('slider');
+
+noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 0,
+        'max': 100
+    }
+});
+  </script>  
+   
+
+</body>
+
+</html>
