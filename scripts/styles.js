@@ -10,6 +10,8 @@ $(document).ready(function () {
 
     $('.datepicker').datepicker();
     $('.tabs').tabs({ /*'swipeable': true*/ });
+
+    $('.modal').modal();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -17,5 +19,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 $(document).ready(function () {
-    
+
 });
