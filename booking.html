@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Materialize JS -->
+  <script src="./scripts/materialize.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Travellopia</title>
+</head>
+
+<body>
+ <!-- ============Navbar============== -->
+ <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="/" class="brand-logo">Travellopia</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="login.html" class="nav-items">Login</a></li>
+          <li><a href="signup.html" class="nav-items">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--=====================End of Navbar=================-->
+
+  <div class="container">
+   
+        <p style="font-weight: 700;font-size:x-large;">Review Package</p>
+        <hr>
+        <!--============Package Details Box===================-->
+
+        <div class="row" id="book_container">
+            <div class="col l12 s12">
+            <p style="font-size: large;font-weight: 700;">Package Details</p>
+            </div>
+            <div class="col l6 s6" id="details">
+                <p>Mussoorie 5D/6N</p>
+            </div>
+            <div class="col l6 s6" id="details">
+                <p>Dates: From 15th Spet-26th Sept</p>
+            </div>
+            <div class="col l6 s6" id="details"> <p>
+                Inclusions :Train,Food,Hotel
+            </p>
+            <br>
+            </div>
+        </div>
+
+        <!--============ End of Package Details Box===================-->
+
+        <hr>
+
+<!--=============================Person slider====================-->
+        <div class="row">
+            <p style="font-size: x-large; font-weight: 700;">Choose No. of Person</p>
+        </div>
+        <form action="#">
+            <p class="range-field">
+              <input type="range" id="test5" min="0" max="12" />
+            </p>
+          </form>
+
+<!--===============================End=========================-->
+
+
+        <!--============From to=====================-->
+
+        <div class="row" id="book_from">
+            <div class="col l4 s4">
+                <p>From
+                    <br>
+                    Howrah
+                </p>
+            </div>
+            <div class="col l4 s4">
+                <p>On
+                    <br>
+                    15th Sept
+                </p>
+            </div>
+            <div class="col l4 s4">
+                <p>For
+                    <br>
+                    2 Adults
+                </p>
+            </div>
+        </div>
+ <!--============ End from to =====================-->
+        
+        <!--============Contact iInformation=====================-->
+
+        <div class="row">
+            <div class="col l12 s12">
+                <p style="font-size: x-large;font-weight: 700;">Contact Information</p>
+                <hr>
+            </div>
+        </div>
+
+            <div class="form-container2">
+                <form action="" >
+                    <div class="row ">
+                        <div class="input-field center-align">
+                          <input id="name" type="text" class="validate">
+                          <label for="">Full Name <i class="fas fa-signature right"></i></label>
+                        </div>
+                      </div>
+                
+                <div class="row">
+                    <div class="input-field center-align  ">
+                      <input id="phone" type="text" class="validate" pattern="[0-9]{10}">
+                      <label for="phone">Age <i class="fas fa-phone right"></i></label>
+                    </div>
+                  </div>
+                  <div class="row ">
+                    <div class="input-field center-align">
+                      <input id="name" type="text" class="validate">
+                      <label for="">Address <i class="fas fa-address-card right"></i></label>
+                    </div>
+                  </div>
+                </form>
+        </div>
+        <p>&nbsp;</p>
+         <!--============ End Contact iInformation=====================-->
+
+        <hr>
+        <div class="row right-align" id="cost">
+            <div class=" col l6 s6">
+                <p>Total Cost</p>
+            </div>
+            <div class=" col l6 s6 ">
+                <p>$15000</p>
+            </div>
+           
+            <div class=" col l6 s6">
+                <p>Gst</p>
+            </div>
+            <div class=" col l6 s6 ">
+                <p>$1000</p>
+            </div>
+            </div>
+            <hr>
+            <div class="row right-align" id="cost">
+            <div class=" col l6 s6">
+                <p>Grand Total</p>
+            </div>
+            <div class=" col l6 s6 ">
+                <p>$16000</p>
+            </div>
+        </div>
+        <div class="row right-align">
+            <button class="btn-primary center-align" id="">Continue to pay</button>
+        </div>
+        <p>&nbsp;</p>
+        
+
+        </div>
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+  <!-- ========= Footer =========== -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="grey-text text-lighten-4">About</h6>
+          <p class="grey-text text-lighten-4">Travellopia is dummy website for Web Technology Project of 4th Sem MCA
+            at <a href="https://heritageit.edu" target="_blank">Heritage Institute of Technology</a> mentored by Prof.
+            Subhra Pramanik</p>
+          <br>
+          <h5 class="brand-logo">Travellopia
+            <br><a href="">Admin Login <i class="fas fa-long-arrow-alt-right"></i></a>
+          </h5>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h6 class="grey-text text-lighten-4">Important Links</h6>
+          <ul>
+            <li><a class="grey-text text-lighten-4" href="https://github.com/AmitManna99/Tour_system_project"
+                target="_blank"><i class="fab fa-github"></i> Source Code</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/amitmanna99" target="_blank"><i
+                  class="fab fa-linkedin"></i> Amit Manna</a></li>
+            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/dwip-hazra-40672517a"
+                target="_blank"><i class="fab fa-linkedin"></i> Dwip Hazra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Travellopia
+        <a class="grey-text text-lighten-4 right" href="#!" style="font-weight: 400;">Developed with ❤️ by Amit &
+          Dwip</a>
+      </div>
+    </div>
+  </footer>
+<!-- ========= End of Footer =========== -->
+
+
+<script> slider = document.getElementById('test5');
+  noUiSlider.create(slider, {
+   start: [20, 80],
+   connect: true,
+   step: 1,
+   orientation: 'horizontal', // 'horizontal' or 'vertical'
+   range: {
+     'min': 0,
+     'max': 12
+   },
+   format: wNumb({
+     decimals: 0
+   })
+  });</script>
+
+</body>
+</html>

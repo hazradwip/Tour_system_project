@@ -379,6 +379,38 @@ button:focus {
     padding: 10px;
 }
 
+
+#book_container{
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 8px;
+    background-color: var(--secondary);
+    width: 100%;
+}
+#details{
+    font-weight: 600;
+    font-size: small;
+}
+
+#book_from{
+    padding-left: 2em;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.form-container2 {
+    background-color: var(--secondary);
+    padding: 1.5rem ;
+    border-radius: 8px;
+    padding-top: 2.5em;
+    
+
+}
+
+#cost{
+    font-size: medium;
+    font-weight: 600;
+}
 /* ====================================== */
 
 /* =========== Input Fields =========== */
