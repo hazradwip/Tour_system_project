@@ -2,48 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- JQuery CDN -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="./css/materialize.css">
-  <link rel="stylesheet" href="./css/styles.css">
-
-  <!-- Materialize JS -->
-  <script src="./scripts/materialize.js"></script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-  <title>Travellopia</title>
+  <?php
+  include 'head.php';
+  ?>
 </head>
 
 <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="nav-wrapper">
-      <div class="container">
-        <a href="#" class="brand-logo">Travellopia</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="login.html" class="nav-items">Login</a></li>
-          <li><a href="signup.html" class="nav-items">Sign Up</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- End of Navbar -->
+  <?php
+  include 'navbar.php';
+  ?>
 
   <!-- Slider Images -->
   <div class="slider center-align">
@@ -112,21 +80,21 @@
 
     <div class="card center-align" id="search-package">
       <h5 class="center-align">Search Packages</h5>
-      <form action="" class="center-align">
+      <form class="center-align" id="search-package-form">
         <div class="row">
           <div class="input-field col l5 s12" id="input-from">
-            <input id="from-city" type="text" class="validate">
+            <input id="from-city" type="text" class="validate" required>
             <label for="from-city">From City <i class="fas fa-map-marker-alt right"></i></label>
           </div>
           <div class="col l2 s12">
             <i class="fas fa-exchange-alt"></i>
           </div>
           <div class="input-field col l5 s12" id="input-to">
-            <input id="destination-city" type="text" class="validate">
+            <input id="destination-city" type="text" class="validate" required>
             <label for="destination-city">To City <i class="fas fa-map-marker-alt right"></i></label>
           </div>
         </div>
-        <button class="btn-primary center-align" id="search-package-btn">Search</button>
+        <button class="btn-primary center-align" type="submit" id="search-package-btn">Search</button>
       </form>
     </div>
 
@@ -257,44 +225,29 @@
 
 
   <!-- ========= Footer =========== -->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h6 class="grey-text text-lighten-4">About</h6>
-          <p class="grey-text text-lighten-4">Travellopia is dummy website for Web Technology Project of 4th Sem MCA
-            at <a href="https://heritageit.edu" target="_blank">Heritage Institute of Technology</a> mentored by Prof.
-            Subhra Pramanik</p>
-          <br>
-          <h5 class="brand-logo">Travellopia
-            <br><a href="">Admin Login <i class="fas fa-long-arrow-alt-right"></i></a>
-          </h5>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h6 class="grey-text text-lighten-4">Important Links</h6>
-          <ul>
-            <li><a class="grey-text text-lighten-4" href="https://github.com/AmitManna99/Tour_system_project" target="_blank"><i
-                  class="fab fa-github"></i> Source Code</a></li>
-            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/amitmanna99" target="_blank"><i
-                  class="fab fa-linkedin"></i> Amit Manna</a></li>
-            <li><a class="grey-text text-lighten-4" href="https://in.linkedin.com/in/dwip-hazra-40672517a" target="_blank"><i
-                  class="fab fa-linkedin"></i> Dwip Hazra</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2021 Travellopia
-        <a class="grey-text text-lighten-4 right" href="#!" style="font-weight: 400;">Developed with ❤️ by Amit &
-          Dwip</a>
-      </div>
-    </div>
-  </footer>
-  <!-- ========= End of Footer =========== -->
+  <?php
+  include 'footer.php';
+  ?>
+  <?php
+  include 'scripts.php';
+  ?>
+  <script>
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        setupNavLinks(user);
+      } else {
+        setupNavLinks();
+      }
+    })
 
-
-  <script src="./scripts/styles.js"></script>
+    const searchPackageForm = document.querySelector('#search-package-form');
+    searchPackageForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fromCity = searchPackageForm['from-city'].value;
+      const destinationCity = searchPackageForm['destination-city'].value;
+      window.location = "/travellopia/search.php?fromCity=" + fromCity + "&destinationCity=" + destinationCity;
+    });
+  </script>
 </body>
 
 </html>

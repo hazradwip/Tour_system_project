@@ -12,6 +12,10 @@ $(document).ready(function () {
     $('.tabs').tabs({ /*'swipeable': true*/ });
 
     $('.modal').modal();
+
+    $('select').formSelect();
+
+    $('.sidenav').sidenav();
 });
 
 document.addEventListener('DOMContentLoaded', function () {

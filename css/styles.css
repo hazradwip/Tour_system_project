@@ -59,6 +59,11 @@ nav .brand-logo {
     font-weight: 600;
 }
 
+.account-details {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
 a {
     color: var(--primary);
     font-weight: 600;
@@ -150,10 +155,10 @@ footer ul li a i {
     margin-bottom: -1.5rem;
 }
 
-#search_con {
+.search_con {
     padding: 24px 0 4px 0;
     background-color: var(--secondary);
-    border-radius: 8px;;
+    border-radius: 8px;
 }
 
 .search-filter-heading span{
@@ -308,6 +313,7 @@ button:focus {
 
 .package-card .card-image img {
     border-radius: 8px 8px 0 0;
+    height: 12rem;
 }
 
 .package-card h6 {
@@ -407,7 +413,7 @@ button:focus {
 
 }
 
-#cost{
+.cost{
     font-size: medium;
     font-weight: 600;
 }
@@ -731,7 +737,9 @@ label i {
     background: #fd5d93 !important;
   }
 
-
+  .chip:focus {
+      background-color: var(--secondary);
+  }
 
 
 /* =============================================== */
